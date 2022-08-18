@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+
+    .menu{
+        position: unset;
+        display: flex;
+        transform: translateX(0%);
+        background-color: transparent;
+    }
+
+    .menu li{
+        width: auto;
+        height: 30px;
+    }
+
+    .menu li a{
+        padding: 0 20px;
+        color: black;
+    }
+
+    .contain-hamburger{
+        display: none;
+    }
+
+    .header-text h1{
+        font-size: 40px;
+    }
+
+    .header-text p{
+        font-size: 16px;
+        font-weight: 300;
+        width: 80%;
+        margin: 20px auto 0;
+        line-height: 1.6em;
+    }
+}

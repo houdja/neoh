@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'overpass', 'manrope', sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.navbar{
+    height: 100px;
+    border-bottom: 0.5px solid rgb(62, 62, 62);
+    position: relative;
+    z-index: 2;
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 18px;
+    color: black;
+}
+
+.menu,
+.contain-hamburger{
+    margin-left: auto;
+}
+
+.menu{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fafafa;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out; 
+}
+
+.menu li{
+    width: 150px;
+    height: 50px;
+}
+
+.menu li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: 0.3s ease-in-out; 
+}
+
+.menu li a:hover{
+    background-color: #333;
+    color: #fafafa;
+}
+
+.contain-hamburger{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fafafa;
+    cursor: pointer;
+    position: relative;
+}
+
+.bar1,
+.bar2,
+.bar3{
+    width: 70%;
+    height: 2px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease-in-out; 
+}
+
+.bar1{
+    top: 35%;
+}
+
+.bar3{
+    top: 65%;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 60%;
+}
+
+.header-text p{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.header-text,
+.scroll-down{
+    color: #fafafa;
+}
+
+.scroll-down{
+    position: absolute;
+    z-index: 2;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+}
+
+.arrow{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* HEADER ACTIVE CLASS */
+.menu.active{
+    transform: translateX(0%);
+}
+
+.bar2.active{
+    transform: translateX(-150%);
+    opacity: 0;
+}
+
+.bar1.active{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.bar3.active{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.bar1.active,
+.bar3.active{
+    top: 50%;
+}

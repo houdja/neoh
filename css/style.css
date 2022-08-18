@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #fafafa;
+    background-color: #111111;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -176,4 +176,90 @@ body{
 .bar1.active,
 .bar3.active{
     top: 50%;
+}
+
+/* SECTION MIS EN AVANT */
+.mis_en_avant{
+    padding: 150px 0;
+}
+
+.contain_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contain_card:not(:last-child){
+    margin-bottom: 100px;
+}
+
+.contain_card:nth-child(2){
+    flex-direction: column-reverse;
+}
+
+.img_en_avant{
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/card1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    margin: 0 auto 75px;
+}
+
+.contain_card:nth-child(2) .img_en_avant{
+    background-image: url(../img/card2.jpg);
+}
+
+.img_en_avant::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #2B2B2B;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(5deg);
+}
+
+.contain_card_text{
+    color: #616062;
+}
+
+.contain_card_text h2{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #f1f1f1;
+}
+
+.contain_card_text p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+
+.contain_card_text p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.contain_btn{
+    margin-top: 30px;
+}
+
+.btn{
+    padding: 7.5px 20px;
+    background-color: #111111;
+    border: 1px solid #616062;
+    color: #616062;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:not(:last-child){
+    margin-right: 10px;
 }

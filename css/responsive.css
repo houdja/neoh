@@ -77,20 +77,29 @@
 
     /* SECTION SERVICES */
 
-    .contain-service-card{
+    .contain-service-card, .contain-drops{
         width: 100%;
         display: grid;
         grid-template-columns:  repeat(4, minmax(200px, 1fr));
         gap: 60px 30px;
     }
 
-    .sercice-card{
+    .contain-drops{
+        grid-template-columns:  repeat(3, minmax(263px, 1fr));
+    }
+
+    .sercice-card, .drop-card{
         width: unset;
         margin: unset;
     }
 
     .sercice-card:nth-child(odd){
         transform: translateY(30px);
+    }
+
+    .all-drop{
+        margin-top: 50px;
+        width: 100%;
     }
 }
 

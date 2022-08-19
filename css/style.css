@@ -278,7 +278,8 @@ body{
 }
 
 .choose h1,
-.drops h1{
+.drops h1,
+.roadmap h1{
     text-transform: capitalize;
     font-weight: 400;
     display: block;
@@ -286,7 +287,8 @@ body{
     width: fit-content;
 }
 .choose h1::after,
-.drops h1::after{
+.drops h1::after,
+.roadmap h1::after{
     content: '';
     display: block;
     width: 50%;
@@ -368,4 +370,100 @@ body{
     display: block;
     margin: 0 auto;
     cursor: pointer;
+}
+
+/* SECTION ROADMAP */
+
+.roadmap{
+    padding: 0 0 100px;
+    color: #616062;
+}
+
+.roadmap h1,
+.roadmap h2{
+    color: #f1f1f1;
+}
+
+.roadmap-card{
+    padding: 30px;
+    width: 400px;
+    height: auto;
+    border: 1px solid #616062;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.roadmap-imgs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 150px);
+    gap: 20px;
+}
+
+.roadmap-imgs > div{
+    border-radius: 3px;
+}
+
+.img1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img3{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.roadmap-text{
+    margin-top: 50px;
+}
+
+.date{
+    background-color: #616062;
+    color: #f1f1f1a5;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.roadmap-text h2,
+.date,
+.roadmap-text p
+{
+    margin-bottom: 15px;
+}
+
+.roadmap-text h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.roadmap-text p{
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.roadmap-text button{
+    background-color: transparent;
+    border: 1px solid #616062;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: #616062;
+    border-radius: 3px;
 }

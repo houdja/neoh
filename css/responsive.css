@@ -142,5 +142,19 @@
         grid-row: 2 / span 1;
     }
 
+    /*  TIMELINE */
+
+    .timeline{
+        width: 100%;
+    }
+
+    .line{
+        width:95%;
+    }
+
+    .timeline-desktop{
+        display: flex;
+    }
+
 }
 

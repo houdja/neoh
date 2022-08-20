@@ -156,5 +156,20 @@
         display: flex;
     }
 
+    /* SECTION INVESTOR */
+
+    .contain-investor-cards{
+        width: 100%;
+        row-gap: 30px;
+    }
+
+    .investor-card{
+        width: 18%;
+    }
+
+    .investor-desktop{
+        display: flex;
+    }
+
 }
 

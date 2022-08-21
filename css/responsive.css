@@ -184,5 +184,19 @@
         justify-content: space-between;
     }
 
+    /* SECTION NEWSLETTER */
+
+    .newsletter p{
+        width: 600px;
+    }
+
+    .newsletter-form{
+        width: 600px;
+    }
+
+    .newsletter-form input{
+        width: 450px;
+    }
+
 }
 

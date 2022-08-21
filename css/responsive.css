@@ -198,5 +198,19 @@
         width: 450px;
     }
 
+    /* FOOTER */
+
+    .footer-container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-right{
+        margin-top: 0;
+    }
+
+
 }
 

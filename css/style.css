@@ -664,3 +664,27 @@ body{
 .sociaux-icon:not(:last-child){
     margin-right: 15px;
 }
+
+/* FOOTER */
+
+footer{
+    background-color: #0D0D0D;
+    border-top: 1px solid #616062;
+    padding: 30px 0;
+    color: #616062;
+    font-size: 13px;
+}
+
+.footer-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.footer-right{
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer-right p:not(:last-child){
+    margin-right: 10px;
+}

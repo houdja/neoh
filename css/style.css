@@ -7,6 +7,10 @@
     font-family: 'overpass', 'manrope', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #111111;
     scroll-behavior: smooth;
@@ -663,6 +667,23 @@ body{
 
 .sociaux-icon:not(:last-child){
     margin-right: 15px;
+}
+
+/* UP BTN */
+
+.up-btn{
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    color: #616062;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #616062;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /* FOOTER */

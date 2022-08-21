@@ -171,5 +171,18 @@
         display: flex;
     }
 
+    /* SECTION NEWS */
+
+    .news-card{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .contain-news{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 

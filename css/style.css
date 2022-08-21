@@ -280,7 +280,8 @@ body{
 .choose h1,
 .drops h1,
 .roadmap h1,
-.investor h1{
+.investor h1,
+.news h1{
     text-transform: capitalize;
     font-weight: 400;
     display: block;
@@ -291,7 +292,8 @@ body{
 .choose h1::after,
 .drops h1::after,
 .roadmap h1::after,
-.investor h1::after{
+.investor h1::after,
+.news h1::after{
     content: '';
     display: block;
     width: 50%;
@@ -556,4 +558,41 @@ body{
 
 .investor-desktop{
     display: none;
+}
+
+/* SECTION NEWS */
+
+.news{
+    color: #616062;
+    padding: 100px 0;
+}
+
+.news-card{
+    width: 400px;
+    margin: 0 auto 50px;
+}
+
+.news-card h2{
+    color: #f1f1f1;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.news-card h2, 
+.news-card p{
+    margin-bottom: 20px;
+}
+
+.news-card p{
+    line-height: 1.5em;
+}
+
+.news-card button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #616062;
+    border-radius: 3px;
+    color: #616062;
 }
